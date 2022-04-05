@@ -1,0 +1,192 @@
+/* CSS reset */ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#ulla{
+    background-color: #000226;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif
+}
+
+
+/* Navigation */ 
+.head {
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    top: 0;
+  }
+  
+  .menu_background {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    background-color: none;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  
+  .mobileiconlabel {
+    display: inline-block;
+    color: #fff;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 10px;
+  }
+  
+  .menuitem {
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+    text-transform: uppercase;   
+    background-color: white;
+    border-radius: 20px;
+    margin: 8px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .logo_psd {
+    display: none;
+  }
+  
+  .menuitems_containertwo,
+  .menuitemtwo {
+    display: none;
+  }
+  
+  /* Skjul textbox og menuitems indtil der klikkes*/
+  .menuitems_container, 
+  .mobileicon,
+  .logo {
+     display: none;
+  }
+  
+  /* vis menuitems når mobileicon-label bliver klikket på*/
+  .navigation_container input:checked ~ .menuitems_container, .menu_background{
+    display: block; 
+  }
+  
+  /* vis menuitems når mobileicon-label bliver klikket på*/
+  .navigation_container input:checked ~ .menuitems_container, .logo{
+    display: block;
+    padding-right: 45px;
+  }
+/* --------------- */ 
+
+
+/* Styling af main sektion */ 
+
+
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 150px;
+}
+
+.ulla_img{
+    width: 40%;
+    margin-right: 50px;
+    height: 40%;
+    border-radius: 50%;
+}
+
+.bundsgaard_img{
+  width: 40%;
+  margin-right: 50px;
+  height: 40%;
+}
+
+.logo_img {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.ulla_title{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    padding: 20px;
+}
+
+.ulla_about{
+    color: white;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-60%);
+}
+
+.from-right {
+  transform: translateX(60%);
+}
+
+.from-left,
+.from-right {
+  transition: transform 800ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+}
+
+p em {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+/* CITATER */
+
+.citat_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card {
+  width: 45%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #000226;
+  display: inline-block;
+}
+
+.citat {
+  color: white;
+  line-height: 2;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.about_container:nth-child(2) {
+  margin-top: 200px;
+}
+
+.about_container:nth-child(3) {
+  margin-top: 200px;
+}
+

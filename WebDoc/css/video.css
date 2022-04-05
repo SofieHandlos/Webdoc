@@ -1,0 +1,122 @@
+/* CSS reset */ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */ 
+.head {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+}
+
+.menu_background {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.mobileiconlabel {
+  display: inline-block;
+  color: black;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px 10px;
+}
+
+.menuitem {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 10px;
+  text-transform: uppercase;   
+  background-color: white;
+  border-radius: 20px;
+  margin: 8px;
+}
+
+.logo_psd {
+  display: none;
+}
+
+.menuitems_containertwo,
+.menuitemtwo {
+  display: none;
+}
+
+/* Skjul textbox og menuitems indtil der klikkes*/
+.menuitems_container, 
+.mobileicon,
+.logo {
+   display: none;
+}
+
+/* vis menuitems når mobileicon-label bliver klikket på*/
+.navigation_container input:checked ~ .menuitems_container, .menu_background{
+  display: block; 
+}
+
+/* vis menuitems når mobileicon-label bliver klikket på*/
+.navigation_container input:checked ~ .menuitems_container, .logo{
+  display: block;
+  padding-right: 45px;
+}
+/* --------------- */ 
+
+
+
+
+/* Styling af overskrift  */ 
+.text_box{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100%;
+transform: translate(-50%,-50%);
+animation: overskrift 2000s linear infinite;
+z-index: 10000;
+}
+
+@keyframes overskrift{
+0% {
+  opacity: 1;
+}
+
+0.2% {
+  opacity: 1;
+}
+
+0.3% {
+  opacity: 0;
+}
+}
+
+.video_title{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "poppins", sans-serif;
+}
+
+/* Styling af video  */ 
+.video_thumpnail{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+/* --------------- */ 

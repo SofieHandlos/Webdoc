@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <title>Forside</title>
+</head>
+  <body>
+    <header class="head">
+      <!-- Navigation -->
+      <nav class="navigation_container flexcontainer">
+          <!-- Mobile burger menu -->
+          <div class="menu_background">
+            <label for="mobileicon" class="mobileiconlabel">&#9776;</label>
+          </div>
+          <input type="checkbox" class="mobileicon" id="mobileicon">
+            <div class="menuitems_container">
+              <a href="index.html" class="menuitem">Forside</a>
+              <a href="Ulla.html" class="menuitem">Mød Ulla</a>
+              <a href="video.html" class="menuitem">Video</a>
+              <a href="#gopro" class="menuitem">Gopro</a>
+            </div>
+        </nav>   
+    </header>
+    <div class="bumper">
+      <section>
+        <img src="img/Background.jpg" id="Background">
+        <img src="img/ulla.png" id="ulla">
+        <h1 id="text">Bedre tilgængelighed<span class="texttwo"></span></h1> 
+      </section> 
+    </div>
+    <div class="horizontal-section">
+      <div class="sticky-wrapper">
+        <div class="element-wrapper">
+          <div class="element">
+            <a href="Ulla.html">
+              <div class="circle_background">
+                <img class="ulla_smil" src="img/ulla_smil.png" alt="ulla">
+                <div class="circle"></div>
+              </div>
+            </a>
+          </div>
+          <div class="line_container">
+            <svg width="600" viewBox="0 0 707 5" fill="none" preserveAspectRatio="xMidYMax meet">
+              <path d="M0 2.5H706.5" stroke="#484848" stroke-width="5"/>
+            </svg>  
+          </div>
+          <div class="element">
+            <a href="video.html">
+              <div class="circle_background">
+                <img class="ulla_smil" src="img/billede_video.png" alt="ulla">
+                <div class="circle"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bumper" id="gopro"><iframe class="video" src="https://www.youtube.com/embed/JRNUf7MBbpY?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="horizontal-section2">
+      <div class="sticky-wrapper2">
+        <div class="element-wrapper2">
+          <div class="elementtwo">
+            <img class="tours_logo" src="img/Logo.png" alt="Tours On Wheels">
+            <p class="mere_info">Du kan læse mere om Tours on wheels og tilgængeligheden i Aarhus på:<br>
+              <a href="https://sagerdersamler.dk/tours-on-wheels/"><em>https://sagerdersamler.dk/tours-on-wheels/</em></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/parallax.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

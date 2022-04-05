@@ -1,0 +1,14 @@
+
+.horizontal-section2 {
+    background-color: #13161f;
+    height: 100vh;
+  }
+
+  /* Styling af video  */ 
+.video{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+/* --------------- */ 

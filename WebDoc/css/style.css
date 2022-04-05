@@ -1,0 +1,295 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.head {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+}
+
+.menu_background {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  background-color: none;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.mobileiconlabel {
+  display: inline-block;
+  color: #fff;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px 10px;
+}
+
+.menuitem {
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 10px;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 20px;
+  margin: 8px;
+}
+
+.logo_psd {
+  display: none;
+}
+
+.menuitems_containertwo,
+.menuitemtwo {
+  display: none;
+}
+
+/* Skjul textbox og menuitems indtil der klikkes*/
+.menuitems_container,
+.mobileicon,
+.logo {
+  display: none;
+}
+
+/* vis menuitems når mobileicon-label bliver klikket på*/
+.navigation_container input:checked ~ .menuitems_container,
+.menu_background {
+  display: block;
+}
+
+/* vis menuitems når mobileicon-label bliver klikket på*/
+.navigation_container input:checked ~ .menuitems_container,
+.logo {
+  display: block;
+  padding-right: 45px;
+}
+/* --------------- */
+
+
+
+/* Styling af forside */
+#text {
+  position: absolute;
+  top: 100px;
+  color: #fff;
+  text-shadow: 2.5px 2.5px  #ffffff75;
+  font-size: 5em;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.texttwo:before {
+  content: "";
+  animation: animate infinite 8s;
+}
+
+@keyframes animate {
+  0% {
+    content: "Bedre ramper";
+  }
+
+  25% {
+    content: "Mindre kantsten";
+  }
+
+  50% {
+    content: "Færre brosten";
+  }
+
+  75% {
+    content: "Bedre handicaptoiletter";
+  }
+
+  100% {
+    content: "Politisk fokus";
+  }
+}
+/* --------------- */ 
+
+
+/* Parallax */
+.bumper {
+  width: 100%;
+  height: 100vh;
+}
+
+.horizontal-section {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-color: #000226;
+}
+
+.sticky-wrapper,
+.sticky-wrapper2 {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.element-wrapper,
+.element-wrapper2 {
+  position: relative;
+  display: flex;
+}
+
+.element {
+  width: 100%;
+  height: 100vh;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+}
+/* --------------- */ 
+
+
+/* Circle backgrounds */
+.circle_background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.circle_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  color: #f3f3f3;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.circle {
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    circle closest-side,
+    rgba(15, 19, 28, 0) 50%,
+    #000226 100%
+  );
+  z-index: 3;
+}
+
+.ulla_smil {
+  width: 650px;
+  height: 650px;
+  z-index: 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.line_container {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+h1 span {
+  font-size: 2.1rem;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+/* --------------- */ 
+
+
+/* Styling af gopro video  */ 
+.video{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+/* --------------- */ 
+
+
+
+
+/* Styling af Tours on wheels side */
+.horizontal-section2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000226;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-wrapper2 {
+  display: flex;
+  justify-content: center;
+}
+
+.elementtwo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mere_info {
+  font-size: 2rem;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  margin-top: 35px;
+  text-align: center;
+  line-height: 3.2rem;
+}
+
+.tours_logo {
+  width: 400px;
+}
+
+a{
+  color: red;
+}
+/* --------------- */ 
+
